@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+    .rw-conversation-container .rw-header{background-color: red;}
+    .rw-conversation-container .rw-messages-container .rw-message .rw-client{background-color: red;}
+    .rw-conversation-container .rw-widget-container{background-color: red;}
+    .conversation-container close-button {
+        background-color: red;
+    }
+
+    .rw-launcher{
+        background-color: red;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #fff;
+    }
+    header {
+        background-color: #ff0000;
+        padding: 20px;
+        text-align: center;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 36px;
+    }
+    header h2 {
+        margin: 0;
+        font-size: 24px;
+        color: #000;
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .left-section {
+        width: 60%;
+    }
+    .right-section {
+        width: 35%;
+    }
+    .profile-pic {
+        width: 100%;
+        border-radius: 50%;
+        border: 5px solid #ff0000;
+        margin-bottom: 20px;
+    }
+    h3 {
+        border-bottom: 2px solid #ff0000;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    p {
+        line-height: 1.6;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #ff0000;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+    .chat-container {
+        background-color: #fff;
+        color: #000;
+        padding: 10px;
+        border-radius: 10px;
+    }
+  </style>
+  <!-- Header Section -->
+  <header>
+      <h1>ManuKrishna S.</h1>
+      <h2>Software Developer | AI Enthusiast | Problem Solver</h2>
+  </header>
+
+  <!-- Main Content -->
+  <div class="content">
+      <!-- Left Section -->
+      <div class="left-section">
+          <img src="your-image.jpg" alt="ManuKrishna's Image" class="profile-pic">
+          <h3>About Me</h3>
+          <p>
+              Hi, I'm ManuKrishna, a passionate Software Developer from Kerala. I have over a year of experience working with Python, Django, and AWS. I have worked on various challenging projects, including international banking systems, project management tools, and AI-powered chatbots. 
+              I am always eager to learn and explore new technologies, and I aim to make a positive impact through my work.
+          </p>
+
+          <h3>Skills</h3>
+          <p>
+              - Python, Django, Flask<br>
+              - Machine Learning, NLP<br>
+              - Web Development (HTML, CSS, JavaScript)<br>
+              - AWS, Docker, PostgreSQL<br>
+              - REST APIs, WebSocket, Rasa
+          </p>
+      </div>
+
+      <!-- Right Section (Chatbot) -->
+      <div class="right-section">
+          <h3>Chat with Manny</h3>
+          <div class="chat-container" id="webchat">
+              <!-- Chatbot will be integrated here -->
+          </div>
+      </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+      <p>© 2024 ManuKrishna S. All Rights Reserved</p>
+  </footer>
+
+  <!-- Rasa Webchat Integration -->
+  <script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"></script>
+  <script>!(function () {
+      let e = document.createElement("script"),
+        t = document.head || document.getElementsByTagName("head")[0];
+      (e.src =
+        "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+        // Replace 1.x.x with the version that you want
+        (e.async = !0),
+        (e.onload = () => {
+          window.WebChat.default(
+            {
+              initPayload: '/self_intro',
+              customData: { language: "en" },
+              socketUrl: "http://localhost:5005",
+              title: "Manny",
+              subtitle: "ManuKrishna Personal Assistant"
+              // add other props here
+            },
+            null
+          );
+        }),
+        t.insertBefore(e, t.firstChild);
+    })();
+    localStorage.clear()
+  </script>  
+</body>
+</html>
