@@ -41,6 +41,6 @@ class BotIntoduction(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         
-        dispatcher.utter_message(text=f"👋 Hello! I'm Manny, Manu's personal AI assistant 🤖 – here to help, but sadly, I can't fetch coffee... ☕️ yet! 😂")
+        dispatcher.utter_message(text=f"👋 Hello! I'm Manny, Manu's personal AI assistant. 🤖 If you're curious to know more about Manu, I'm here to help! 💼✨")
 
         return []

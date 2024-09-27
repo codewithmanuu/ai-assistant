@@ -10,8 +10,8 @@ responses = {
         "- A WebSocket-based Real-Time Chat Application, handling multiple user communications seamlessly.\n\n"
         "In addition to his hands-on experience with Python, Django, AWS, Docker, and WebSockets, Manu has also deployed several "
         "data mining projects and is proficient in using tools like NumPy and Pandas for machine learning.\n\n"
-        "For a detailed look at his skills and experience, you can check out his [LinkedIn Profile](https://linkedin.com/in/manukrishna) "
-        "and view his [Updated Resume](https://example.com/resume)."
+        "For a detailed look at his skills and experience, you can check out his [LinkedIn Profile](https://www.linkedin.com/in/manukrishna-s-aaa5b6244) "
+        "and view his [Updated Resume](https://drive.google.com/file/d/1ZWQHFimJYcwBANrF5_vFrc0rfw2rFStp/view)."
     ),
     3: (
         "Manukrishna S is proficient in a range of skills and tools essential for modern web development, including Python, Django, and AWS "
@@ -31,6 +31,6 @@ responses = {
         "impact on these projects.\n\n"
         "In his internship, Manu built user authentication systems and implemented RESTful APIs, gaining practical hands-on experience in web development.\n\n"
         "Beyond professional work, he is actively engaged in personal projects, such as a WebSocket-based real-time chat application and data mining initiatives. "
-        "You can explore his work on GitHub at [GitHub](https://github.com/manukrishna)."
+        "You can explore his work on GitHub at [GitHub](https://github.com/codewithmanuu)."
     )
 }

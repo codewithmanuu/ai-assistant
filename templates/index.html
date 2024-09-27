@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Profile &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
+	<title>Profile &mdash; Manukrishna</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -38,17 +38,17 @@
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 	
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet"  href="{{ url_for('static', filename='css/animate.css') }}">
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/icomoon.css') }}">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
 
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="{{ url_for('static', filename='js/modernizr-2.6.2.min.js') }}"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -72,22 +72,20 @@
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">	
-	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
+	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image: url('{{ url_for('static', filename='images/cover_bg_3.jpg') }}');" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t js-fullheight">
 						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(images/IMG-20240719-WA0001.jpg);"></div>
+							<div class="profile-thumb" style="background-image: url('{{ url_for('static', filename='images/IMG-20240719-WA0001.jpg') }}');"></div>
 							<h1><span>ManuKrishna S</span></h1>
 							<h3><span>Python Developer / Backend Engineer / AI/ML Engineer</span></h3>
 							<p>
 								<ul class="fh5co-social-icons">
-									<li><a href="#"><i class="icon-twitter2"></i></a></li>
-									<li><a href="#"><i class="icon-facebook2"></i></a></li>
-									<li><a href="#"><i class="icon-linkedin2"></i></a></li>
-									<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/manukrishna-s-aaa5b6244"><i class="icon-linkedin2"></i></a></li> 
+									<li><a href="https://github.com/codewithmanuu"><i class="icon-github"></i></a></li>
 								</ul>
 							</p>
 						</div>
@@ -119,10 +117,8 @@
 					<p>Hi, I'm ManuKrishna, a passionate Software Developer from Kerala. I have over a year of experience working with Python, Django, and AWS. I have worked on various challenging projects, including international banking systems, project management tools, and AI-powered chatbots. 
                         I am always eager to learn and explore new technologies, and I aim to make a positive impact through my work.</p>
 						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter2"></i></a></li>
-							<li><a href="#"><i class="icon-facebook3"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin2"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/manukrishna-s-aaa5b6244"><i class="icon-linkedin2"></i></a></li>
+							<li><a href="https://github.com/codewithmanuu"><i class="icon-github"></i></a></li>
 						</ul>
 					</p>
 				</div>
@@ -151,7 +147,7 @@
                                     <span class="company">Codesvera Info Tech (01/06/2023 - 01/06/2024)</span>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>Worked on multiple projects, including international banking application, Data Mining Projects, Project management systems, building web applications using Python, Django, and AWS.</p>
+                                    <p>At Codesvera Info Tech, I worked on multiple impactful projects, including an international banking application, data mining projects, and project management systems. My role involved building web applications using Python, Django, and AWS. Additionally, mentoring juniors, optimizing code, and managing server handling, which enhanced both my technical and leadership skills.</p>
                                 </div>
                             </div>
                         </li>
@@ -163,7 +159,7 @@
                                     <span class="company">Luminar Technolab (2022 - 2023)</span>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>Collaborated on various projects, including web scraping using Python, and contributed to both frontend and backend development in a Django environment.</p>
+                                    <p>During this period, I honed my skills in Python, Django, and Django REST Framework, building web applications and collaborating on innovative projects. I contributed to various aspects of development, from frontend to backend, utilizing Django and REST APIs to deliver robust and scalable solutions.</p>
                                 </div>
                             </div>
                         </li>
@@ -179,7 +175,7 @@
                                     <span class="company">University of Kerala (2019 - 2022)</span>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>Developed a strong foundation in programming, web development, and data analysis, gaining proficiency in Python and Django.</p>
+                                    <p>My Bachelor's degree in Computer Applications has been instrumental in molding me into an efficient engineer. The curriculum provided me with a strong foundation in programming, web development, and data analysis, while fostering critical thinking and problem-solving skills. Through hands-on projects and collaborative learning, I gained proficiency in multiple areas of software engineering, preparing me for real-world challenges in software development.</p>
                                 </div>
                             </div>
                         </li>
@@ -282,7 +278,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<p>&copy; 2017 Free HTML5 Template. All Rights Reserved. <br>Designed by <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.com" target="_blank">Unsplash</a></p>
+					<p>Manukrishna's Portfolio WebPage. <br>Designed by : manukrishna.s2001@gmail.com</p>
 				</div>
 			</div>
 		</div>
@@ -293,23 +289,23 @@
 	</div>
 	
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
+	<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
 	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="{{ url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="{{ url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
 	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
+	<script src="{{ url_for('static', filename='js/jquery.stellar.min.js') }}"></script>
 	<!-- Easy PieChart -->
-	<script src="js/jquery.easypiechart.min.js"></script>
+	<script src="{{ url_for('static', filename='js/jquery.easypiechart.min.js') }}"></script>
 	<!-- Google Map -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
+	<script src="{{ url_for('static', filename='js/google_map.js') }}"></script>
 	
 	<!-- Main -->
-	<script src="js/main.js"></script>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
     <script>!(function () {
         let e = document.createElement("script"),
           t = document.head || document.getElementsByTagName("head")[0];
@@ -318,16 +314,20 @@
           // Replace 1.x.x with the version that you want
           (e.async = !0),
           (e.onload = () => {
+			const currentDomain = window.location.hostname;
+			const protocol = window.location.protocol;
+			const socketUrl = `${protocol}//${currentDomain}:5005`;
             window.WebChat.default(
               {
 				selector: "#webchat",
                 initPayload: '/self_intro',
                 customData: { language: "en" },
-                socketUrl: "http://localhost:5005",
+                socketUrl: socketUrl,
                 title: "Manny",
                 subtitle: "ManuKrishna Personal Assistant",
 				tooltipPayload: "/self_intro",
             	tooltipDelay: 500,
+				profileAvatar: './static/images/myAvatar.svg',
                 // add other props here
               },
               null
