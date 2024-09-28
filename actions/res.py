@@ -11,7 +11,7 @@ responses = {
         "In addition to his hands-on experience with Python, Django, AWS, Docker, and WebSockets, Manu has also deployed several "
         "data mining projects and is proficient in using tools like NumPy and Pandas for machine learning.\n\n"
         "For a detailed look at his skills and experience, you can check out his [LinkedIn Profile](https://www.linkedin.com/in/manukrishna-s-aaa5b6244) "
-        "and view his [Updated Resume](https://drive.google.com/file/d/1ZWQHFimJYcwBANrF5_vFrc0rfw2rFStp/view)."
+        "and view his [Updated Resume](https://drive.google.com/file/d/1mEDhDiKR3cksjZ3WfXIkuxoyOU18nqs3/view?usp=sharing)."
     ),
     3: (
         "Manukrishna S is proficient in a range of skills and tools essential for modern web development, including Python, Django, and AWS "
