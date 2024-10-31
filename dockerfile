@@ -14,8 +14,8 @@ WORKDIR /app
 # upgrade pip version
 RUN pip install --no-cache-dir --upgrade pip
 
-RUN pip install rasa==3.6.20
-RUN pip install flask
+RUN pip install --no-cache-dir rasa==3.6.20
+RUN pip install --no-cache-dir flask
 
 COPY ./actions /app/actions
 COPY ./data /app/data
